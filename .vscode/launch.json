@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach",
+      "port": 9229,
+      "request": "attach",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Current File",
+      "program": "${file}"
+    },
+    {
+      "name": "Debug React App",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "outputCapture": "console",      
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**",
+        "**/react-refresh/**",
+        "**/webpack/**",
+        "**/hot/**",
+        "**/bootstrap*",
+        "**/react-dev-tools/**",
+        "**/webpack-dev-server/**"
+      ]
+    }
+  ]
+}

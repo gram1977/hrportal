@@ -1,0 +1,175 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  padding: 30px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header h1 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.user-info {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.user-role {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  opacity: 0.9;
+  text-transform: capitalize;
+}
+
+.nav-menu {
+  flex: 1;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid white;
+  padding-left: 16px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.logout-button {
+  margin: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+}
+
+/* Dashboard Home Styles */
+.dashboard-home {
+  padding: 40px;
+}
+
+.dashboard-home h2 {
+  color: #333;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.dashboard-home > p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.dashboard-card h3 {
+  color: #333;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.dashboard-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-link:hover {
+  color: #5568d3;
+}
