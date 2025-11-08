@@ -18,6 +18,9 @@
 .env.test.local
 .env.production.local
 
+# deployment scripts (local use only)
+check_deployment.sh
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
