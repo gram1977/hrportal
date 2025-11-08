@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import useAuth from './hooks/useAuth';
 import Login from './components/auth/Login';
 import Dashboard, { DashboardHome } from './components/dashboard/Dashboard';
@@ -20,7 +20,7 @@ function ProtectedRoute({ children }) {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route
@@ -39,7 +39,7 @@ function App() {
         </Route>
         <Route path="/" element={<Navigate to="/login" />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
